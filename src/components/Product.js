@@ -1,86 +1,46 @@
-import React, { useEffect, useState } from "react";
-import Skeleton from "react-loading-skeleton";
-import { Link, useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addCart } from "../redux/action";
+import React, { useState } from "react";
+import { MdArrowRightAlt } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-const Product = () => {
-  const { id } = useParams();
-  const [product, setProduct] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
-
-  const addProduct = (product) => {
-    dispatch(addCart(product));
-  };
-
-  useEffect(() => {
-    const getProduct = async () => {
-      setLoading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-      setProduct(await response.json());
-      setLoading(false);
-    };
-    getProduct();
-  }, []);
-
-  const Loading = () => {
-    return (
-      <>
-        <div className="col-md-6">
-          <Skeleton height={400} />
-        </div>
-        <div className="col-md-6" style={{ lineHeight: 2 }}>
-          <Skeleton height={500} width={300} />
-          <Skeleton height={75} />
-          <Skeleton height={25} width={150} />
-          <Skeleton height={50} />
-          <Skeleton height={50} width={100} style={{ marginLeft: 6 }} />
-        </div>
-      </>
-    );
-  };
-
-  const ShowProduct = () => {
-    return (
-      <>
-        <div className="col-md-6">
-          <img
-            src={product.image}
-            alt={product.title}
-            height="400px"
-            width="400px"
-          />
-        </div>
-        <div className="col-md-6">
-          <h4 className="text-uppercase text-black-50">{product.category}</h4>
-          <h1 className="display-5">{product.title}</h1>
-          <p className="lead">
-            Rating {product.rating && product.rating.rate}
-            <i className="fa fa-star"></i>
-          </p>
-          <h3 className="display-6 fw-bold my-4">$ {product.price}</h3>
-          <p className="lead">{product.description}</p>
-          <button
-            className="btn btn-outline-dark px-4 py-2"
-            onClick={() => addProduct()}
-          >
-            Add to cart
-          </button>
-          <Link to="/cart" className="btn btn-outline-dark ms-2 px-3 py-2">
-            Go to cart
-          </Link>
-        </div>
-      </>
-    );
-  };
+const Product = ({ item }) => {
+  const [cardHovered, setCardHovered] = useState(false);
 
   return (
-    <div>
-      <div className="container py-5">
-        <div className="row py-5">
-          {loading ? <Loading /> : <ShowProduct />}
-        </div>
+    <div
+      className={`grid ${item?.isSecond && "md:mt-10"}`}
+      key={item.id}
+      onMouseEnter={() => setCardHovered(true)}
+      onMouseLeave={() => setCardHovered(false)}
+    >
+      <img
+        src={cardHovered ? item?.imgBack : item?.img}
+        className="w-full h-80 md:rounded-tl-md md:rounded-tr-md transition-transform transform-gpu duration-300 ease-in-out"
+        alt={item.name}
+      />
+      <div className="grid gap-5 p-4 bg-gray-100 items-start md:rounded-bl-md md:rounded-br-md">
+        <span className="text-base font-semibold pt-2">{item.name}</span>
+        <span className="text-sm pt-2">{item.desc}</span>
+        {item.price && (
+          <span className="text-base text-gray-500">
+            Rs.{" "}
+            {new Intl.NumberFormat("en-IN", {
+              maximumSignificantDigits: 6,
+            }).format(item?.price)}
+          </span>
+        )}
+        {item.addToCart ? (
+          <Link to={`/products/${item.id}`}>
+            <button className="rounded-lg w-full px-3 py-1.5 text-white bg-black h-[48px] hover:bg-gray-200 hover:text-black border border-gray-400 hover:shadow-xl">
+              Add to Cart
+            </button>
+          </Link>
+        ) : (
+          <Link to={item.link}>
+            <span className="text-sm flex items-center cursor-pointer">
+              Shop Now <MdArrowRightAlt className="text-xl ml-2" />{" "}
+            </span>
+          </Link>
+        )}
       </div>
     </div>
   );

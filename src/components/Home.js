@@ -1,24 +1,39 @@
-import React from "react";
-import Products from "./Products";
+import React, { useEffect } from "react";
+import Product from "./Product";
+import Section1 from "./HomePage/Section1";
+import Section2 from "./HomePage/Section2";
+import Section3 from "./HomePage/Section3";
+import Section4 from "./HomePage/Section4";
+import Section5 from "./HomePage/Section5";
+import Section6 from "./HomePage/Section6";
+import Section7 from "./HomePage/Section7";
+import { productData } from "../constants/Data";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
-    <>
-      <div className="hero">
-        <div className="card bg-dark text-white position-relative card-bg-cls">
-          <img src="/bg.png" className="card-img bg-img" alt="..." />
-          <div className="card-img-overlay d-flex flex-column justify-content-center">
-            <div className="container">
-              <h5 className="card-title display-3 fw-bolder mb-0">
-                NEW SEASON ARRIVALS
-              </h5>
-              <p className="card-text lead fs-2">CHECK OUT ALL THE TRENDS</p>
-            </div>
-          </div>
+    <div>
+      <Section1 />
+      <Section2 />
+      <div className="md:container md:max-w-maxContainer w-full md:py-20">
+        <div className="grid md:grid-cols-4 grid-cols-1 md:gap-2 gap-5">
+          {productData?.map((item) => (
+            <Product item={item} />
+          ))}
         </div>
       </div>
-      <Products />
-    </>
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+    </div>
   );
 };
 

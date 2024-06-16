@@ -88,7 +88,11 @@ const Products = () => {
           return (
             <>
               <div className="col-md-3 mb-4">
-                <div className="card h-100 text-center p-4" key={product.id}>
+                <div
+                  className="card h-100 text-center p-4"
+                  key={product.id}
+                  id="product-card"
+                >
                   <img
                     src={product.image}
                     className="card-img-top"
@@ -99,7 +103,9 @@ const Products = () => {
                     <h5 className="card-title mb-0">
                       {product.title.substring(0, 12)}
                     </h5>
-                    <p className="card-text fw-bold lead">${product.price}</p>
+                    <p className="card-text fw-bold lead">
+                      Rs. {product.price}
+                    </p>
                     <Link
                       to={`/products/${product.id}`}
                       className="btn btn-outline-dark"

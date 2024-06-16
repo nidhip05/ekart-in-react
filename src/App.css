@@ -1,5 +1,40 @@
-.navbar-nav a {
-  font-size: 18px;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .card-bg-cls {
@@ -13,4 +48,31 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(8px); /* Adjust the blur radius as needed */
+  z-index: 1; /* Position below the text */
+}
+
+/* Text element positioned above the blurred background */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  font-size: 24px; /* Adjust font size as needed */
+  z-index: 2; /* Position above the blurred background */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Optional: add shadow to enhance text visibility */
+}
+
+input::placeholder {
+  color: black;
 }
