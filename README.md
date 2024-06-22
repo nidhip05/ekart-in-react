@@ -3,7 +3,7 @@
 E-Kart is a cutting-edge e-commerce platform developed with React, Redux, and JavaScript, designed to cater to outdoor enthusiasts worldwide. Discover a vast selection of products tailored to your adventure needs, from camping essentials to rugged outdoor apparel.
 
 
-# 🚀 Key Features
+# Key Features
 
 - ## Responsive Design
   Seamlessly adapts to all devices, ensuring a smooth browsing experience on smartphones, tablets, and desktops
@@ -46,7 +46,8 @@ This description highlights the key features of your e-commerce website, emphasi
    npm start
  - ## Open your browser and navigate
    http://localhost:3000 to view the E-Kart Website
-
+ - ## Live demo
+   Explore the Live demo - https://ekart-in-react.vercel.app
 
 # Contributing
 
