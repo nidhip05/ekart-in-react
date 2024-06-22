@@ -97,7 +97,7 @@ export const allWeather = [
   {
     id: 6,
     img: "/assets/images/new/boot7.webp",
-    imgBack: "/assets/images/new/boot7Back.webp",
+    imgBack: "/assets/images/new/boot7Back.jpg",
     name: "The Modern Winter Boot in Sage",
     price: 3000,
     isSecond: true,
