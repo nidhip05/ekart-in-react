@@ -24,7 +24,7 @@ const Header = () => {
                     router.pathname == "/newin" ? "underline" : ""
                   }`}
                 >
-                  New
+                  New Arrival
                 </span>
               </Link>
               <Link to="/rain">
@@ -42,7 +42,7 @@ const Header = () => {
                     router.pathname == "/snow" ? "underline" : ""
                   }`}
                 >
-                  Snow
+                  Snow Gear
                 </span>
               </Link>
               <Link to="/allweather">

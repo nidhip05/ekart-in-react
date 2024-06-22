@@ -14,7 +14,7 @@ const Product = ({ item }) => {
     >
       <img
         src={cardHovered ? item?.imgBack : item?.img}
-        className="w-full h-80 md:rounded-tl-md md:rounded-tr-md transition-transform transform-gpu duration-300 ease-in-out"
+        className="w-full h-[350px] md:rounded-tl-md md:rounded-tr-md transition-transform transform-gpu duration-300 ease-in-out"
         alt={item.name}
       />
       <div className="grid gap-5 p-4 bg-gray-100 items-start md:rounded-bl-md md:rounded-br-md">
