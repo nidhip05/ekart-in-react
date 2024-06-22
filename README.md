@@ -8,7 +8,7 @@ E-Kart is a cutting-edge e-commerce platform developed with React, Redux, and Ja
 - ## Responsive Design
   Seamlessly adapts to all devices, ensuring a smooth browsing experience on smartphones, tablets, and desktops
 - ## Robust Catalog
-  Explore a wide array of outdoor products including footwear, accessories, and gear
+  Explore a wide array of outdoor products including footwear
 - ## Efficient State Management
   Utilizes Redux for efficient data handling, ensuring fast and reliable performance
 
