@@ -15,7 +15,7 @@ E-Kart is a cutting-edge e-commerce platform developed with React, Redux, and Ja
 
 # In Progress
 
- - ## Secure Transactions:
+ - ## Secure Transactions
    Implementation of secure payment gateways is currently underway, ensuring safe and reliable transactions.
 
 
