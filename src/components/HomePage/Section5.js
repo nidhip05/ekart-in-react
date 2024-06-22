@@ -27,7 +27,7 @@ const Section5 = () => {
           </div>
         </div>
         <div>
-          <img src="/assets/images/new/product6.webp" className="h-full w-full" />
+          <img src="/assets/images/new/boot1Back.webp" className="h-full w-full" />
         </div>
       </div>
     </div>
