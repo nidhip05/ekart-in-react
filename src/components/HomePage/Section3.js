@@ -5,7 +5,7 @@ const Section3 = () => {
   return (
     <>
       <div className="md:py-20 container max-w-maxContainer py-0">
-        <div className="grid gap-20">
+        <div className="grid md:gap-20 gap-12 md:my-0 my-12">
           <div className="grid gap-5">
             <span className="md:text-5xl text-xl underline font-semibold text-center md:leading-[4rem] leading-6">
               Find Your Size. Free Shipping. <br /> Easy Returns.

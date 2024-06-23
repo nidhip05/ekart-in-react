@@ -19,7 +19,7 @@ const Rain = () => {
       <div className="text-white font-bold md:text-5xl text-xl absolute top-60 left-[38rem]">
         Waterproof. City Essential.
       </div>
-      <div className="container max-w-maxContainer py-20">
+      <div className="container max-w-maxContainer md:py-20 pt-12 pb-20">
         <div className="flex justify-between items-center mb-10 md:px-0 px-4">
           <span className="font-semibold md:text-5xl text-xl pl-5">Rain</span>
           <div className="text-gray-500">5 products</div>

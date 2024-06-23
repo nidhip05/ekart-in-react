@@ -24,7 +24,7 @@ const AllWeather = () => {
       <div className="text-yellow-700 font-semibold absolute top-[18rem] left-[57rem]">
         The Weekend Boot™
       </div>
-      <div className="container max-w-maxContainer py-20">
+      <div className="container max-w-maxContainer md:py-20 pt-12 pb-20">
         <div className="flex justify-between items-center mb-10 md:px-0 px-4">
           <span className="font-semibold md:text-5xl text-xl pl-5">
             All Weather

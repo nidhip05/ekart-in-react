@@ -23,7 +23,7 @@ const Cart = () => {
   const cartItems = (cartItem) => {
     return (
       <div className="" key={cartItem.id}>
-        <div className="grid grid-cols-[1fr,0fr] my-10 md:px-0 px-4">
+        <div className="grid grid-cols-[1fr,0fr] md:my-10 my-5 md:px-0 px-4">
           <div className="grid md:grid-cols-[auto,1fr] gap-5">
             <div className="">
               <img
@@ -74,7 +74,7 @@ const Cart = () => {
 
   const checkOutButton = () => {
     return (
-      <div className="container max-w-maxContainer py-20 md:px-0 px-4">
+      <div className="container max-w-maxContainer md:py-20 py-10 md:px-0 px-4">
         <div className="text-end">
           <NavLink
             to="/checkout"
@@ -91,8 +91,8 @@ const Cart = () => {
     <>
       {state.length === 0 && emptyCart()}
       {state.length !== 0 && (
-        <div className="container max-w-maxContainer py-10">
-          <div className="flex justify-between items-center my-10 md:px-0 px-4">
+        <div className="container max-w-maxContainer md:py-10 py-2">
+          <div className="flex justify-between items-center md:my-10 py-5 md:px-0 px-4">
             <h1 className="font-semibold text-black md:text-5xl text-lg">
               Your Cart
             </h1>
@@ -103,7 +103,7 @@ const Cart = () => {
             </Link>
           </div>
           <hr />
-          <div className="container my-10">
+          <div className="container md:my-10 my-5">
             <div className="flex justify-between items-center text-sm md:px-0 px-4">
               <p className="tracking-wide text-gray-500 md:text-base text-sm">
                 PRODUCT
