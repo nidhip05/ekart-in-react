@@ -1,6 +1,6 @@
-# E-Kart: Your Ultimate Outdoor Gear Marketplace
+# Thesus : Your Ultimate Outdoor Gear Marketplace
 
-E-Kart is a cutting-edge e-commerce platform developed with React, Redux, and JavaScript, designed to cater to outdoor enthusiasts worldwide. Discover a vast selection of products tailored to your adventure needs, from camping essentials to rugged outdoor apparel.
+Thesus is a cutting-edge e-commerce platform developed with React, Redux, and JavaScript, designed to cater to outdoor enthusiasts worldwide. Discover a vast selection of products tailored to your adventure needs, from camping essentials to rugged outdoor apparel.
 
 
 # Key Features
