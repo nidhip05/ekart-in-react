@@ -1,6 +1,6 @@
-# Thesus : Your Ultimate Outdoor Gear Marketplace
+# Thesus : E-Commerce Website Clone
 
-Thesus is a cutting-edge e-commerce platform developed with React, Redux, and JavaScript, designed to cater to outdoor enthusiasts worldwide. Discover a vast selection of products tailored to your adventure needs, from camping essentials to rugged outdoor apparel.
+I cloned the Thesus website, an e-commerce platform for purchasing all-weather shoes. Using React, Redux, and JavaScript, I replicated the UI, featuring sections like New Arrivals, Snow Gear, and All-Weather Essentials. 
 
 
 # Key Features
@@ -10,14 +10,13 @@ Thesus is a cutting-edge e-commerce platform developed with React, Redux, and Ja
 - ## Robust Catalog
   Explore a wide array of outdoor products including footwear
 - ## Efficient State Management
-  Utilizes Redux for efficient data handling, ensuring fast and reliable performance
+  Used Redux for efficient data handling, ensuring fast and reliable performance
 
 
 # In Progress
 
- - ## Secure Transactions
-   Implementation of secure payment gateways is currently underway, ensuring safe and reliable transactions.
-
+ - ## The project is still in development, with the payment gateway and login/logout authentication yet to be completed.
+   
 
 # About Thesus™
 
