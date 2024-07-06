@@ -15,7 +15,7 @@ I cloned the Thesus website, an e-commerce platform for purchasing all-weather s
 
 # In Progress
 
- - ## The project is still in development, with the payment gateway and login/logout authentication yet to be completed.
+The project is still in development, with the payment gateway and login/logout authentication yet to be completed.
    
 
 # About Thesus™
